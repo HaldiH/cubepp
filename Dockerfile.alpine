@@ -1,0 +1,10 @@
+FROM alpine as build
+RUN apk add cmake ninja g++ sdl2-dev sdl2_ttf-dev
+
+WORKDIR /src
+ADD . ./
+RUN cmake -B build -G Ninja . \
+    && cmake --build build
+
+FROM scratch AS export
+COPY --from=build /src/build/cubepp .

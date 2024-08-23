@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="VcsDirectoryMappings">
+    <mapping directory="$PROJECT_DIR$/build/_deps/sdl2-src" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/build/_deps/sdl2_ttf-src" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/build/_deps/sdl2_ttf-src/external/freetype" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/build/_deps/sdl2_ttf-src/external/freetype/subprojects/dlg" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/build/_deps/sdl2_ttf-src/external/harfbuzz" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/cmake-build-debug/_deps/vk-bootstrap-src" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/cmake-build-debug/_deps/vk_bootstrap-src" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/cmake-build-release/_deps/vk-bootstrap-src" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/cmake-build-release/_deps/vk_bootstrap-src" vcs="Git" />
+  </component>
+</project>

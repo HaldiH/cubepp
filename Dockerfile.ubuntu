@@ -1,0 +1,17 @@
+FROM ubuntu:24.04 as build
+RUN apt-get update && apt-get install -y \
+    build-essential \
+    cmake \
+    ninja-build \
+    g++ \
+    libsdl2-dev \
+    libsdl2-ttf-dev \
+    && rm -rf /var/lib/apt/lists/*
+
+WORKDIR /src
+ADD . ./
+RUN cmake -B build -G Ninja . \
+    && cmake --build build
+
+FROM scratch AS export
+COPY --from=build /src/build/cubepp .
